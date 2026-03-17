@@ -52,9 +52,12 @@ function outputMessage(message) {
   document.querySelector(".chat-messages").appendChild(div);
 }
 // Add room name to DOM
+const roomName = document.getElementById("room-name");
+const userList = document.getElementById("users");
+
 function outputRoomName(room) {
-    rootName.innerText = room;
-  }
+  roomName.innerText = room;
+}
   
 // Add users to DOM
 function outputUsers(users) {
